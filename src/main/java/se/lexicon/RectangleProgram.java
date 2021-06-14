@@ -16,6 +16,8 @@ public class RectangleProgram {
 
         rectangle01.getArea(height, width);
 
+        System.out.println(rectangle01.getHeight());
+        System.out.println(rectangle01.getWidth());
 
 
 

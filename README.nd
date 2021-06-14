@@ -10,3 +10,34 @@ Contains the exercises and assignment from Week Four
         • Create methods to deposit and withdraw funds.
         • Do not allow a withdrawal to complete if the balance is insufficient.
         • Extra: Have a static counter that increment and assign the account number.
+
+        Exercise 02
+        Make a program that can print out “drive” method in a OOP way.
+        a. Create a class “Car” with the following fields:
+        id, year, model, colour, motorSize.
+        b. Create a public method “drive” inside “Car” which will print:
+        model + ” with motor ” + motorSize + ” can drive now.”
+        c. In the main program make instance of “Car” and call the method “drive”.
+        - Covering class design and instances
+
+        Exercise 03
+        2. Make a program that prints out the area on a rectangle in a OOP way.
+        a. Create a class “Rectangle” with the following fields:
+        height, width. (both should be double values.)
+        b. Make two constructors, one default constructor without parameters and the second constructor which should take two parameters (height and weight).
+        c. Add getter and setter for height and width fields.
+        d. Write public method “getArea” which will return area (height*weight).
+        e. In the main program create instance of that “Rectangle” and ask user for height and width and then print calculated area.
+        - Covering Constructors, getters, and setters
+
+        Exercise 04
+        3. Make a program that demonstrates the relationship between Classes.
+        a. Create a class “Author” and create a class “Book”.
+        b. Create the appropriate relationship between “Author” and “Book”.
+            i. One book can be written by only one author.
+            ii. One author can write one or more books.
+        c. In the main program create an array of authors where each author has at least one book.
+        d. Add a method that prints all books that have been written by a specific author.
+        e. Add another method to print the author of a specific book.
+        - Covering Constructors, getters, and setters
+        - Covering relationship between Classes.

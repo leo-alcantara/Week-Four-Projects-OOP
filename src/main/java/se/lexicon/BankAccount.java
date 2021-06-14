@@ -8,7 +8,7 @@ public class BankAccount {
     private String customerEmail;
     private int customerPhoneNumber;
 
-    public BankAccount(int accountNumber, int balance, String customerName, String customerEmail, int customerPhoneNumber){
+    public BankAccount(int accountNumber, int balance, String customerName, String customerEmail, int customerPhoneNumber) {
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.customerName = customerName;
@@ -16,44 +16,60 @@ public class BankAccount {
         this.customerPhoneNumber = customerPhoneNumber;
     }
 
-    public int getAccountNumber(){
+    public int getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(int accountNumber){
+    public void setAccountNumber(int accountNumber) {
         this.accountNumber = accountNumber;
     }
 
-    public int getBalance(){
+    public int getBalance() {
         return balance;
     }
 
-    public void setBalance(int balance){
+    public void setBalance(int balance) {
         this.balance = balance;
     }
 
-    public String getCustomerName(){
+    public String getCustomerName() {
         return customerName;
     }
 
-    public void setCustomerName(String customerName){
+    public void setCustomerName(String customerName) {
         this.customerName = customerName;
     }
 
-    public String getCustomerEmail(){
+    public String getCustomerEmail() {
         return customerEmail;
     }
 
-    public void setCustomerEmail(String customerEmail){
+    public void setCustomerEmail(String customerEmail) {
         this.customerEmail = customerEmail;
     }
 
-    public int getCustomerPhoneNumber(){
+    public int getCustomerPhoneNumber() {
         return customerPhoneNumber;
     }
 
-    public void setCustomerPhoneNumber(int customerPhoneNumber){
+    public void setCustomerPhoneNumber(int customerPhoneNumber) {
         this.customerPhoneNumber = customerPhoneNumber;
+    }
+
+    public int depositFunds(int fundToDeposit) {
+        balance = balance + fundToDeposit;
+        System.out.println(balance);
+        return balance;
+    }
+
+    public int withdrawFunds(int fundToWithdraw) {
+        if (fundToWithdraw > balance) {
+            System.out.println("You cannot withdraw " + fundToWithdraw + " because you have insufficient funds. Your current balance is: " + balance);
+        } else {
+            balance = balance - fundToWithdraw;
+            System.out.println(balance);
+        }
+        return balance;
     }
 
 
